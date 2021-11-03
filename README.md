@@ -6,7 +6,7 @@ This repo consists of all CVEngine infra deploy and provisioning code. This repo
 
     1 VPC
     4 Subnets: Management(22 Open), Web(Public - 443 open), App(Private), DB(Private), multi AZ.
-    Note:(ALB/ELB will not be used if we can get the job done with Envoy)
+    Note:(ALB/ELB can be  used)
     Security groups
     NAT gateway
     CIDRs defined
