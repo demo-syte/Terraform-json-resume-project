@@ -16,3 +16,5 @@ This repo consists of all CVEngine infra deploy and provisioning code. This repo
     Instances in App and DB tier with IAM roles attached to access S3 bucket
     Cloudflare for DDOS prevention
     Jenkins to auto-deploy in App subnet with IAM role attached
+![Setup](https://user-images.githubusercontent.com/78690371/140008582-4a4bb976-fff1-47c7-974d-563b5e58c3d3.png)
+
