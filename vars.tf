@@ -20,16 +20,14 @@ variable "user" {
 }
 
 variable "Pri-key" {
-  default = "cvengine"
-}
+  }
 
 variable "Public_key_path" {
-  default = "cvengine.pub"
+ 
 }
 
 variable "MYIP" {
-  default = "202.185.198.68/32"
-}
+  }
 
 variable "rmquser" {
   default = "rabbit"
