@@ -1,6 +1,6 @@
 # Application Load balancer on port TCP 80/443
 
-/*resource "aws_elb" "devcvengine-elb" {
+resource "aws_elb" "devcvengine-elb" {
   name            = "dev-cvengine-elb"
   subnets         = [module.vpc.public_subnets[0], module.vpc.public_subnets[1]]
   security_groups = [aws_security_group.elb-securitygroup.id]
@@ -33,7 +33,7 @@ lb_protocol = "tcp"
     Project     = "dev-cvengine"
   }
 
-}*/
+}
 #access_logs = {
 # bucket = "elb-access-logs-bucket"
 # }
@@ -42,7 +42,7 @@ lb_protocol = "tcp"
 
 # S3 bucket for ELB logs
 
-/*data "aws_elb_service_account" "devengine" {}
+data "aws_elb_service_account" "devengine" {}
 
 resource "aws_s3_bucket" "logs" {
   bucket        = "elb-logs-${terraform.workspace}"
@@ -66,7 +66,7 @@ data "aws_iam_policy_document" "logs" {
       "arn:aws:s3:::elb-logs-${terraform.workspace}/*",
     ]
   }
-}*/
+}
 
 
 # Autoscaling
@@ -98,7 +98,7 @@ data "aws_iam_policy_document" "logs" {
 #
 # *********************************************************
 
-/*resource "aws_launch_configuration" "devcvengine-launchconfig" {
+resource "aws_launch_configuration" "devcvengine-launchconfig" {
   name_prefix     = "web-cvengine-"
   image_id        = lookup(var.AMIS, var.REGION)
   instance_type   = var.instance_type
