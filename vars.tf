@@ -34,7 +34,7 @@ variable "rmquser" {
 }
 
 variable "rmqpass" {
-  default = "Big33rn!1234567"
+  default = {}
 }
 
 
@@ -47,7 +47,7 @@ variable "dbuser" {
 }
 
 variable "dbpass" {
-  default = "admin123"
+  default = {}
 }
 
 variable "instance_count" {

@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "devcvengine-bucket" {
   tags = {
     Name        = "Dev-CVProd-engine"
     Environment = "Dev"
-    Owner       = "Roshan"
+    Owner       = {}
   }
 }
 
@@ -62,7 +62,7 @@ resource "aws_instance" "ec2-web-1" {
 
     "Name"    = "web-cvengine-1"
     "Project" = "Dev-cvengine"
-    "Owner"   = "Roshan"
+    "Owner"   = {}
   }
 
 
@@ -79,7 +79,7 @@ resource "aws_instance" "ec2-web-1" {
   tags = {
     "Name"    = "web-cvengine-2"
     "Project" = "Dev-cvengine"
-    "Owner"   = "Roshan"
+    "Owner"   = {}
   }
 
   /*provisioner "file" {

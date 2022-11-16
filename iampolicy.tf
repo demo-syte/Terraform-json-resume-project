@@ -18,7 +18,7 @@ assume_role_policy = <<EOF
 EOF
 tags = {
 tag-key = "tag-value"
-Owner = "Roshan"
+Owner = {}
 }
 }
 
@@ -30,7 +30,7 @@ role = "${aws_iam_role.S3_Access_role.name}"
 
 tags = {
     Name = "S3 Access profile for App/DB S3 Access"
-    owner = "Roshan"
+    owner = {}
 }
 }
 

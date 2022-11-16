@@ -19,7 +19,7 @@ resource "aws_security_group" "cvengine-bastion-sg" {
   }
   tags = {
     Name        = "cvengine-Bastion-sg"
-    Owner       = "Roshan"
+    Owner       = {}
     Environment = "Dev"
   }
 }
@@ -70,7 +70,7 @@ resource "aws_security_group" "cvengine-backend-sg" {
   }
   tags = {
     Name        = "cvengine-backend-sg"
-    Owner       = "Roshan"
+    Owner       = {}
     Environment = "Dev"
   }
 }
@@ -106,7 +106,7 @@ resource "aws_security_group_rule" "sec-allow_itself" {
   }
   tags = {
     Name        = "cvengine-elb-sg"
-    Owner       = "Roshan"
+    Owner       = {}
     Environment = "Dev"
   }
 }*/

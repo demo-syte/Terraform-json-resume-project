@@ -5,7 +5,7 @@ resource "aws_db_subnet_group" "rds-db" {
 
   tags = {
     Name  = "Subnet group for RDs"
-    Owner = "Roshan"
+    Owner = {}
   }
 
 }
@@ -17,7 +17,7 @@ resource "aws_elasticache_subnet_group" "cvengine-ecache-subgroup" {
 
   tags = {
     "Name" = "Subnet Group of ecache"
-     "Owner" = "Roshan"
+     "Owner" = {}
   }
 }
 

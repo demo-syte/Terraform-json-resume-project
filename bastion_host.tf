@@ -9,7 +9,7 @@ resource "aws_instance" "cvengine-Bastion-1" {
   tags = {
     Name    = "cvengine-bastion"
     Project = "cvengine"
-    Owner   = "Roshan"
+    Owner   = {}
   }
 
   provisioner "file" {
@@ -29,7 +29,7 @@ resource "aws_instance" "cvengine-Bastion-1" {
   tags = {
     Name    = "cvengine-bastion-2"
     Project = "cvengine"
-    Owner   = "Roshan"
+    Owner   = {}
   }
 
 
